@@ -1,7 +1,6 @@
 package projeto;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -63,5 +62,6 @@ public class Arraial {
         Collections.reverse(nomes);
         System.out.println("O Ordenação Inversa: " + nomes.toString());
 
+        leia.close();
     }// Main
 }// classe
