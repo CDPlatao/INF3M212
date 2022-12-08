@@ -47,8 +47,8 @@ public class Arraial {
         } // For
         System.out.println("ArrayList Vazio ?");
         System.out.println(nomes.isEmpty());
-        
-        System.out.println("Posição do Chrigor é: " +nomes.indexOf("Chrigor"));
+
+        System.out.println("Posição do Chrigor é: " + nomes.indexOf("Chrigor"));
 
         System.out.println("Ordenação de Array");
         nomes.add("Girafales");
@@ -62,6 +62,6 @@ public class Arraial {
         System.out.println("O Ordenação: " + nomes.toString());
         Collections.reverse(nomes);
         System.out.println("O Ordenação Inversa: " + nomes.toString());
-        
+
     }// Main
 }// classe
