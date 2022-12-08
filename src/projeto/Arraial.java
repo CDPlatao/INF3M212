@@ -63,5 +63,8 @@ public class Arraial {
         Collections.reverse(nomes);
         System.out.println("O Ordenação Inversa: " + nomes.toString());
         
+        nomes.remove("Suriname");
+        Collections.sort(nomes);
+        System.out.println("Nomes, sem Suriname: " + nomes.toString())
     }// Main
 }// classe
