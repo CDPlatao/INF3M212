@@ -65,6 +65,6 @@ public class Arraial {
         
         nomes.remove("Suriname");
         Collections.sort(nomes);
-        System.out.println("Nomes, sem Suriname: " + nomes.toString())
+        System.out.println("Nomes, sem Suriname: " + nomes.toString());
     }// Main
 }// classe
