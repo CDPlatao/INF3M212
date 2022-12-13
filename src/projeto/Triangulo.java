@@ -12,7 +12,7 @@ public class Triangulo {
         System.out.println("|_____________________________|");
         do {
             menu();
-            opM = leia.nextInt();
+            opM = leiaInt();
             switch (opM) {
                 case 1:
                     Verificacao();
@@ -46,11 +46,11 @@ public class Triangulo {
         int A = 0, B = 0, C = 0;
 
         System.out.print("\n*Informe o primeiro lado do triângulo: ");
-        A = leia.nextInt();
+        A = leiaInt();
         System.out.print("\n*Informe o segundo lado do triângulo: ");
-        B = leia.nextInt();
+        B = leiaInt();
         System.out.print("\n*Informe o terceiro lado do triângulo: ");
-        C = leia.nextInt();
+        C = leiaInt();
 
         if ((A < B + C) && (B < A + C) && (C < B + A)) {
             if ((A == B) && (B == C)) {
@@ -67,4 +67,14 @@ public class Triangulo {
             System.out.println("Estes valores não formam um triângulo!.");
         }
     }// Verificacao
+
+    public static int leiaInt() {
+        Scanner leia = new Scanner(System.in);
+        try {
+            return leia.nextInt();
+        } catch (Exception e) {
+            System.out.print("Valor não é um número, tente novamente: ");
+            return leiaInt();
+        }
+    }// Leia
 }// Class
