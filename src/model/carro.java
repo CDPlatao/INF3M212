@@ -5,7 +5,7 @@ public class carro {
     private String tpcambio;
     private String tpdirecao;
     private String placa;
-    private String renavam;
+    private int renavam;
     private String marca;
     private String modelo;
     private float motorizacao;
@@ -19,7 +19,7 @@ public class carro {
 
     }// Carro
 
-    public carro(String tpcambio, String tpdirecao, String placa, String renavam, String marca, String modelo,
+    public carro(String tpcambio, String tpdirecao, String placa, int renavam, String marca, String modelo,
             float motorizacao, int anofabricacao, int anomodelo) {
         this.tpcambio = tpcambio;
         this.tpdirecao = tpdirecao;
@@ -56,11 +56,11 @@ public class carro {
         this.placa = placa;
     }
 
-    public String getRenavam() {
+    public int getRenavam() {
         return renavam;
     }
 
-    public void setRenavam(String renavam) {
+    public void setRenavam(int renavam) {
         this.renavam = renavam;
     }
 
@@ -106,8 +106,8 @@ public class carro {
 
     @Override
     public String toString() {
-        return "Carro " + "| Tipo de cambio:" + tpcambio + "| Tipo de direção:" + tpdirecao + "| Placa:" + placa + "| Renavam:"
-                + renavam + "| Marca:" + marca + "| Modelo:" + modelo + "| Motorizacao:" + motorizacao
-                + "| Ano de fabricação:" + anofabricacao + "| Ano do modelo:" + anomodelo;
+        return "Carro " + "| Tipo de cambio: " + tpcambio + "| Tipo de direção: " + tpdirecao + "| Placa: " + placa + "| Renavam: "
+                + renavam + "| Marca: " + marca + "| Modelo: " + modelo + "| Motorizacao :" + motorizacao
+                + "| Ano de fabricação: " + anofabricacao + "| Ano do modelo: " + anomodelo;
     }
 }// Class
