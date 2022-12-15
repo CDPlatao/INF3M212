@@ -46,7 +46,7 @@ public class POO {
         anomodelo = leia.nextInt();
         carro car2 = new carro(tpcambio, tpdirecao, placa, renavam, marca, modelo, motorizacao, anofabricacao,
                 anomodelo);
-        System.out.println("Carro 2: " + car2.toString()); 
+        System.out.println("Carro 2: " + car2.toString());
 
         carro car3 = new carro();
         car3.setPlaca("yzy1998");
@@ -57,14 +57,19 @@ public class POO {
         car3.setAnomodelo(1996);
         car3.setMotorizacao(1.8f);
         car3.setTpcambio("Manual");
-        car3.setTpdirecao("Hidraulica");        
-        System.out.println("Carro 3: "+ car3.toString());
+        car3.setTpdirecao("Hidraulica");
+        System.out.println("Carro 3: " + car3.toString());
         ArrayList<carro> listacarros = new ArrayList<>();
         listacarros.add(car1);
         listacarros.add(car2);
         listacarros.add(car3);
-        for(carro car: listacarros){
+        for (carro car : listacarros) {
             System.out.println("Placa: " + car.getPlaca() + "| Modelo: " + car.getModelo());
+        }
+        listacarros.remove(car2);
+System.out.println("-------------------------------------------------");
+        for (carro car : listacarros) {
+            System.out.println("\nPlaca: " + car.getPlaca() + "| Modelo: " + car.getModelo());
         }
     }// Main
 }// POO
